@@ -2,7 +2,7 @@ const express = require('express');
 const session = require('express-session');
 const app = express();
 
-const sessionTimeout = 1 * 60 * 1000; // 30 minutes
+const sessionTimeout = 30 * 60 * 1000; // 30 minutes
 
 // Middleware to check session timeout
 function checkSessionTimeout(req, res, next) {
